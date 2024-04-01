@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- This is my css reset -->
+    <link rel="stylesheet" href="css-reset.css">
+    <!-- This is my own stylesheet -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </header>
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="pop-content">
+                    <img src="images/icon-success.svg" alt="success icon">
+                    <h2>Thank you</h2>
+                    <p class="popup-message">Form submitted Successfully, Please check your email.</p>
+                    <div class="popup-close">close</div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section class="promo">
+                <p>
+                    <span>Try it free 7 days</span> then $20/mo. thereafter
+                </p>
+            </section>
+            <form class="signup-form">
+                <!-- First name form field -->
+                <div class="input-wrapper">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <div class="error">
+                        <p>First name cannot be empty</p>
+                    </div>  <!--Only shows if field is not valid-->
+                    <img src="images/icon-error.svg" alt="error icon" width="25px" height="25px">
+                </div>
+              
+                <!-- Last name form field -->
+                <div class="input-wrapper">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="lastName" placeholder="Last Name">
+                    <div class="error">
+                        <p>Last name cannot be empty</p>
+                    </div>  <!--Only shows if field is not valid-->
+                    <img src="images/icon-error.svg" alt="error icon" width="25px" height="25px">
+                </div>
+              
+                <!-- Email address form field -->
+                <div class="input-wrapper">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email Address" id="email">
+                    <div class="error">
+                        <p>Looks like this is not an email</p>
+                    </div>     <!--Only shows if field is not valid-->
+                    <img src="images/icon-error.svg" alt="error icon" width="25px" height="25px">
+                </div>
+
+                <!-- Password form field -->
+                <div class="input-wrapper">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" placeholder="Password" >
+                    <div class="error">
+                        <p>Password cannot be empty</p>
+                    </div><!--Only shows if field is not valid-->
+                    <img src="images/icon-error.svg" alt="error icon" width="25px" height="25px">
+                </div>
+              
+                <!-- Form submit button -->
+                <input type="submit" id="button"value="Claim Your Free Trial">
+                
+                <h3>By clicking the button, you are agreeing to our <a href="#" class="terms-and-services">Terms and Services</a></h3>
+            </form>
+        </main>
+    </div>
+    <p class="attribution">
+        Challenge by <a href="https://frontendmentor.io" target="_blank">frontend mentor</a> Coded by <a href="https://www.linkedin.com/in/oluwalolope-adeleye-45025a225" target="_blank">Oluwalolope</a>
+    </p>
+
+    <!-- This is the Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
